@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P';
+        }
+        canvas
+        {
+            background: #fff;
+            margin: auto 0;
+        }
+        body
+        {
+            background: #fff;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+        div
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        h4
+        {
+            font-weight: lighter;
+            margin-bottom: 1.6em;
+        }
+        button
+        {
+            padding: .6em;
+            background: #424242;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div style="font-family: 'Press Start 2P;'">
+        <h4>GAME OVER</h4>
+        <button>PLAY AGAIN</button>
+    </div>
+
+    <canvas></canvas>
+
+    <script src="player.js"></script>
+    <script src="ground.js"></script>
+    <script src="cactus.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
